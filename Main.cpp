@@ -12,7 +12,7 @@ void reflect(int &index) {
 }
 
 int main(int argc, char **argv) {
-
+//testing git
 	//checks command line arguments are valid.
 	if (argc == 1) {
 		cout << "invalid configuration files";
