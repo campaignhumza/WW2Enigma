@@ -4,7 +4,7 @@ command line WW2 Enigma encryption machine written in C++
 1) compile in the terminal using the make all command
 
 2) run program in terminal with example rotors and plugboards, 
-   e.g >enigma ./rotors/I.rot ./rotors/II.rot ./rotors/III.rot ./plugboards/I.pb
+   e.g > ./enigma ./rotors/I.rot ./rotors/II.rot ./rotors/III.rot ./plugboards/I.pb
    
 You can write your own rotor or plugboard configurations using the following spec:
 
