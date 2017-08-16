@@ -5,17 +5,27 @@
 
 using namespace std;
 
-/*
- * Constructor instantiates plugBoardSetting field from
- * plugboard configuration file.
+/**
+ Constructor: instantiates plugBoardSetting field from
+ plugboard config file
+
+ @param plugBoardSettings plugboard config file
  */
 Plugboard::Plugboard(char * plugBoardSettings) {
 	this->plugBoardSettings = plugBoardSettings;
 }
 
-/*
- * Reads plugboard file field and translates index reference
- * parameter according to appropriate plugboard wiring.
+/**
+ Constructor: default empty constructor
+ */
+Plugboard::Plugboard() {
+}
+
+/**
+ Reads plugboard file field and translates index reference
+ parameter according to appropriate plugboard wiring.
+
+ @param index character index reference
  */
 void Plugboard::wire(int &index) {
 	ifstream file;
@@ -23,8 +33,7 @@ void Plugboard::wire(int &index) {
 	int letterPairOne;
 	int letterPairTwo;
 	bool translated = false;
-	while (file >> letterPairOne >> letterPairTwo
-			&& !translated) {
+	while (file >> letterPairOne >> letterPairTwo && !translated) {
 		if (index == letterPairOne) {
 			index = letterPairTwo;
 			translated = true;

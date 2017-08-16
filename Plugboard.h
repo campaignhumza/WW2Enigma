@@ -7,6 +7,7 @@ class Plugboard {
 
 public:
 	Plugboard(char * plugBoardSettings);
+	Plugboard();
 
 	void wire(int &index);
 
